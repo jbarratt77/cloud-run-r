@@ -2,6 +2,3 @@ steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   args: ["build", "-t", "cloud-run-r", "."]
-# Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/artemis-338820/cloud-run-r']
